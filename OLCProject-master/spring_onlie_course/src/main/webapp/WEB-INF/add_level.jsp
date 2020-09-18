@@ -11,7 +11,7 @@
 </head>
 <body>
 <form:form action="save_level" method="POST" modelAttribute="level" >
-Course_name: <form:select path="course_id" class="form-control">
+Course_name: <form:select path="course.course_id" class="form-control">
 	<c:forEach items="${courseList}" var="course">
 	<form:option value="${course.course_id }">${course.course_name }</form:option>
 	</c:forEach></form:select><br>

@@ -21,7 +21,7 @@ public class Level_material implements Serializable {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long Level_material_id;
 	private String Level_material_name;
-	private String status;
+	private boolean status;
 	
 	@ManyToOne
 	@JoinColumn(name="level_id")
@@ -80,19 +80,22 @@ public class Level_material implements Serializable {
 
 
 
-	public String getStatus() {
+	
+
+
+	public void setQuestions(Question questions) {
+		this.questions = questions;
+	}
+
+
+
+	public boolean isStatus() {
 		return status;
 	}
 
 
 
-	public void setStatus(String status) {
+	public void setStatus(boolean status) {
 		this.status = status;
-	}
-
-
-
-	public void setQuestions(Question questions) {
-		this.questions = questions;
 	}
 }
