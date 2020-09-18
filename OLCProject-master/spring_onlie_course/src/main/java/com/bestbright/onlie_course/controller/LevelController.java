@@ -32,6 +32,7 @@ public class LevelController {
 		levelRepository.save(level);
 		
 		model.addAttribute("levelList",levelRepository.findAll());
+		
 		return "level_list";
 	}
 	
