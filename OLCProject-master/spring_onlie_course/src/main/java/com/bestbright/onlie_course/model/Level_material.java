@@ -10,6 +10,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
+
+
 @Entity
 public class Level_material implements Serializable {
 
@@ -21,7 +23,9 @@ public class Level_material implements Serializable {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long Level_material_id;
 	private String Level_material_name;
-	private boolean status;
+	private String type;
+	private String photopath;
+
 	
 	@ManyToOne
 	@JoinColumn(name="level_id")
@@ -31,9 +35,10 @@ public class Level_material implements Serializable {
 	
 	
 	@OneToOne
+	@JoinColumn(name="question_id")
 	private Question questions;
 	
-	private Level_material() {}
+	public Level_material() {}
 	
 	
 
@@ -70,32 +75,39 @@ public class Level_material implements Serializable {
 	}
 
 
-
-
-
-
 	public Question getQuestions() {
 		return questions;
 	}
 
 
 
-	
-
-
 	public void setQuestions(Question questions) {
 		this.questions = questions;
 	}
 
-
-
-	public boolean isStatus() {
-		return status;
+	public String getPhotopath() {
+		return photopath;
 	}
 
 
 
-	public void setStatus(boolean status) {
-		this.status = status;
+	public void setPhotopath(String photopath) {
+		this.photopath = photopath;
 	}
+
+
+
+	public String getType() {
+		return type;
+	}
+
+
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+
+
+	
 }
