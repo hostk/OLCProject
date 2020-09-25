@@ -17,7 +17,8 @@
       <label for="course_name">Course_name:</label>
       <form:input path="course_name" class="form-control" placeholder="Enter course_name"/>
       
-    </div><br>
+</div><br>
+
 <div class="form-group col-sm-6">
       <label for="Course_Description">Description:</label>
       <form:input path="course_description" class="form-control" placeholder="Enter Description"/>
