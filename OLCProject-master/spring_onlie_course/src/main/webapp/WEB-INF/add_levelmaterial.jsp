@@ -11,7 +11,7 @@
 </head>
 <body>
 <form:form action="save_levelmaterial" method="POST" modelAttribute="levelM" enctype="multipart/form-data">
-Course_name: <form:select path="level.level_id" class="form-control">
+Level: <form:select path="level.level_id" class="form-control">
 	<c:forEach items="${levelList}" var="level">
 	<form:option value="${level.level_id }">${level.level_name }</form:option>
 	</c:forEach></form:select><br>

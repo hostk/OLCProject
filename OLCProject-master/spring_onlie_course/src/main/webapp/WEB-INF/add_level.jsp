@@ -16,7 +16,7 @@ Course_name: <form:select path="course.course_id" class="form-control">
 	<form:option value="${course.course_id }">${course.course_name }</form:option>
 	</c:forEach></form:select><br>
 	
-Level_Name: <form:input path="level_name" /><form:errors path="level_name" cssClass="error"></form:errors> <br>
+Level_Name: <form:input path="level_name" class="form-control" /><br>
 
 
 <input type="submit" value="submit" />

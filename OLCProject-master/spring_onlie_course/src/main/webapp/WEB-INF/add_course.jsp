@@ -13,10 +13,20 @@
 <body>
 <form:form action="save_course" method="POST" modelAttribute="course" >
 
-Course_name: <form:input path="course_name" /><form:errors path="course_name" cssClass="error"></form:errors> <br>
-Course_Description: <form:input path="course_description" /><br>
+<div class="form-group col-sm-6">
+      <label for="course_name">Course_name:</label>
+      <form:input path="course_name" class="form-control" placeholder="Enter course_name"/>
+      
+    </div><br>
+<div class="form-group col-sm-6">
+      <label for="Course_Description">Description:</label>
+      <form:input path="Course_Description" class="form-control" placeholder="Enter Description"/>
+      
+    </div><br>
 
-<input type="submit" value="submit" />
+
+
+<button type="submit" class="btn btn-primary">Save</button>
 
 </form:form>
 

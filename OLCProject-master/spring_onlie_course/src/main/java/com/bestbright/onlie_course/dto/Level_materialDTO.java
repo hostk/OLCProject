@@ -2,13 +2,15 @@ package com.bestbright.onlie_course.dto;
 
 import org.springframework.web.multipart.MultipartFile;
 
+import com.bestbright.onlie_course.model.Level;
+
 public class Level_materialDTO {
 	private Long Level_material_id;
 	private String Level_material_name;
 	private String type;
 	private String photopath;
 	private MultipartFile file;
-	
+	private Level level;
 	
 	
 	public Long getLevel_material_id() {
@@ -42,6 +44,12 @@ public class Level_materialDTO {
 	}
 	public void setType(String type) {
 		this.type = type;
+	}
+	public Level getLevel() {
+		return level;
+	}
+	public void setLevel(Level level) {
+		this.level = level;
 	} 
 	
 }
