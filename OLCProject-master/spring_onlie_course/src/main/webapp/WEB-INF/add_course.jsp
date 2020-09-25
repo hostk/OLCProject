@@ -20,7 +20,7 @@
     </div><br>
 <div class="form-group col-sm-6">
       <label for="Course_Description">Description:</label>
-      <form:input path="Course_Description" class="form-control" placeholder="Enter Description"/>
+      <form:input path="course_description" class="form-control" placeholder="Enter Description"/>
       
     </div><br>
 
