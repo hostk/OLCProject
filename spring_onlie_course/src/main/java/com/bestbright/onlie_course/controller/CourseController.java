@@ -10,16 +10,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.bestbright.onlie_course.model.Course;
 import com.bestbright.onlie_course.repository.CourseRepository;
 
-
-
 @Controller
 public class CourseController {
 	
 	@Autowired
 	private CourseRepository courseRepository;
 	
-	
-	@GetMapping("/create_course")
+	@GetMapping("/add_course")
 	public String create(Model model) {
 		model.addAttribute("course", new Course());
 		return "add_course";
