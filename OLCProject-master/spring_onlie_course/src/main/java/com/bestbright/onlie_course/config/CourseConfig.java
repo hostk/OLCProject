@@ -28,19 +28,19 @@ public class CourseConfig {
 		return resolver;
 	}
 	
-//	@Bean
-//	public WebMvcConfigurer addResourceHandlers() {
-//		return new WebMvcConfigurer() {
-//			@Override
-//			public void addResourceHandlers(final ResourceHandlerRegistry registry) {
-//				registry.addResourceHandler("/resources/**")
-//			      .addResourceLocations("/resources/**","classpath:/static/");
-//				registry.addResourceHandler("/images/**")
-//			      .addResourceLocations("/images/**","/images/");
-//			
-//			}
-//
-//		};
-//	}
+	@Bean
+	public WebMvcConfigurer addResourceHandlers() {
+		return new WebMvcConfigurer() {
+			@Override
+			public void addResourceHandlers(final ResourceHandlerRegistry registry) {
+				registry.addResourceHandler("/resources/**")
+			      .addResourceLocations("/resources/**","classpath:/static/");
+				registry.addResourceHandler("/images/**")
+			      .addResourceLocations("/images/**","/images/");
+			
+			}
+
+		};
+	}
 	
 }
