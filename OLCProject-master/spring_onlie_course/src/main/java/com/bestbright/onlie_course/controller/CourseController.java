@@ -32,7 +32,7 @@ public class CourseController {
 	public String saveCourse(@ModelAttribute("course")CourseDTO coursedto,Model model) throws Exception {
 		courseService.saveCourse(coursedto);
 		model.addAttribute("courseList",courseRepository.findAll());
-		return "course_list";
+		return "index";
 	}
 
 }
