@@ -1,1 +1,1 @@
-<div class="footer">I lOve You</div>
+<div class="footer">Copyright  2010-2014 javatpoint.com</div>

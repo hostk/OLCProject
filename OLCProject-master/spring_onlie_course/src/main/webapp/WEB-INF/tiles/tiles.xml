@@ -13,9 +13,16 @@
     </definition>
     
     <!-- Pages -->        
-    <definition name="course" extends="layout.basic">
+    <definition name="add_course" extends="layout.basic">
         <put-attribute name="body" value="/WEB-INF/add_course.jsp" />
     </definition>
     
-    
+    <definition name="add_level" extends="layout.basic">
+    	<put-attribute name="body" value="/WEB-INF/add_level.jsp" />
+    </definition>
+ 
+ <definition name="add_levelmaterial" extends="layout.basic">
+    	<put-attribute name="body" value="/WEB-INF/add_levelmaterial.jsp" />
+    </definition>
+ 
 </tiles-definitions>
