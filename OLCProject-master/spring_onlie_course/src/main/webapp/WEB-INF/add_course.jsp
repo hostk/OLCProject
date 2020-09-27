@@ -11,7 +11,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form:form action="save_course" method="POST" modelAttribute="course" >
+<form:form action="save_course" method="POST" modelAttribute="course" enctype="multipart/form-data" >
 
 <div class="form-group col-sm-6">
       <label for="course_name">Course_name:</label>
@@ -25,7 +25,11 @@
       
     </div><br>
 
-
+<div class="form-group col-sm-6">
+      <label for="file">Photo</label>
+      <form:input  type="file" path="file"/>
+   </div>   
+   <br>
 
 <button type="submit" class="btn btn-primary">Save</button>
 
