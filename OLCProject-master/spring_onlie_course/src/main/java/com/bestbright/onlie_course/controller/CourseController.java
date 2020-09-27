@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.bestbright.onlie_course.dto.CourseDTO;
-import com.bestbright.onlie_course.model.Course;
+
 import com.bestbright.onlie_course.repository.CourseRepository;
 import com.bestbright.onlie_course.service.CourseService;
 
@@ -30,9 +30,7 @@ public class CourseController {
 	
 	@PostMapping("/save_course")
 	public String saveCourse(@ModelAttribute("course")CourseDTO coursedto,Model model) throws Exception {
-		
 		courseService.saveCourse(coursedto);
-		
 		model.addAttribute("courseList",courseRepository.findAll());
 		return "course_list";
 	}
