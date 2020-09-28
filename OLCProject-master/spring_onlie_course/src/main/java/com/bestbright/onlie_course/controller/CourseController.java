@@ -59,10 +59,20 @@ public class CourseController {
 //	
 
 	
-	@GetMapping("/level/{course_id}")
-	public String showProductListByCategory(Model model,@RequestParam("course_id") Long id) {
-		//model.addAttribute("categories", productService.getCategoryList());
-		model.addAttribute("levellist", levelService.getLevellistbycourse(id));
+//	@GetMapping("/level/{course_id}")
+//	public String showProductListByCategory(Model model,@RequestParam("course_id") Long id) {
+//		//model.addAttribute("categories", productService.getCategoryList());
+//		model.addAttribute("levellist", levelService.getLevellistbycourse(id));
+//		return "course_details";
+//	}
+	
+	@RequestMapping("/level/{course_id}")
+	public String showLevelListByCourse(Model model, @PathVariable("course_id") Long id) {
+		model.addAttribute("courseList",courseRepository.findAll());
+		List<Level> levelList =levelService.getLevellistbycourse(id); 
+		model.addAttribute("levels", levelList);
+		model.addAttribute("course_id", id);
 		return "course_details";
 	}
+	
 }

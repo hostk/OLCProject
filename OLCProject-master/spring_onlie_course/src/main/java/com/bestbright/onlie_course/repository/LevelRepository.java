@@ -10,6 +10,6 @@ import com.bestbright.onlie_course.model.Level;
 
 public interface LevelRepository extends JpaRepository<Level,Long>{
 
-	@Query("SELECT l from Level l LEFT JOIN Course c on l.course.course_id=c.course_id where l.course.course_id=:course_id")
-	public List<Level> getLevelListByCourse(@Param("course_id")Long id);
+	@Query("SELECT l from Level l JOIN Course c on l.course.course_id=c.course_id where l.course.course_id=:courseId")
+	public List<Level> getLevelListByCourse(@Param("courseId")Long id);
 }
