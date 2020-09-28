@@ -104,31 +104,44 @@
         
         <!--================Courses Area =================-->
         <section class="courses_area p_120">
-        	<div class="container">
-        		<div class="main_title">
+        
+        
+     <div class="container" style="min-height:300px;">
+     <div class="main_title">
         			<h2>OUR COURSE</h2>
         			
         		</div>
-        		<div class="row courses_inner">
-        			
-	<c:forEach items="${courseList }" var="its" varStatus="row">
-		<div class="col-sm-3">
-	<div class="card" style="width:180" >
-    <img class="card-img-top" src="./images/${its.photopath}" alt="Card image" style="width:150" height="100">
-    <div class="card-body">
-      <p class="card-text">${its.course_name}</p>
-      <p class="card-text">${its.course_description }</p>
-      <a href="#" class="btn btn-primary stretched-link">course</a>
-    </div>
-	</div>
-	</div>
-	</c:forEach>
-		    </div>
-        	</div>
-        </section>
-        
-        
-        
+			<div class="row">
+			<div class="col-20">
+				<div class="row">
+					<c:forEach items="${courseList }" var="course" varStatus="row">
+						<div class="card m-2 col-5" style="max-height: 300px;">
+							<div class="row no-gutters">
+								<div class="col-md-4 mt-2">
+									 <img class="card-img-top" src="./images/${course.photopath}" alt="Card image" style="width:150" height="100">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<div class="row">
+											<h3 class="card-title">${course.course_name }</h3>
+											<span class="card-text"
+												style="max-height: 50px; overflow: hidden; margin-top: 20px; margin-bottom: 20px;">${prod.descr }
+											</span> <strong class="card-text">${course.course_description}</strong>
+										</div>
+									</div>
+									<a href="/level/${course.course_id}" class="orange-text d-flex flex-row-reverse p-2">
+						      	<h5 class="waves-effect waves-light">Course</h5>
+    								</a>
+								</div>
+							</div>
+							
+						</div>
+					</c:forEach>
+				</div>
+			</div>
+			</div>
+			</div>   
+         </section>
         
         
         

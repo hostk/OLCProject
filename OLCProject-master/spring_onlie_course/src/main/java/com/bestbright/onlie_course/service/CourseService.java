@@ -47,5 +47,12 @@ public class CourseService implements CourseInterface {
 			courseRepository.save(cour);
 	}
 	}
+	@Override
+	public Course getcourseById(Long id) {
+		// TODO Auto-generated method stub
+		return courseRepository.findById(id).get();
+	}
+	
+	
 }
 	
