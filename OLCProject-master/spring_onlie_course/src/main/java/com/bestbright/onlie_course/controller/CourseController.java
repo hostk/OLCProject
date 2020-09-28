@@ -57,13 +57,7 @@ public class CourseController {
 //		return "course_details";
 //	}
 //	
-//	@RequestMapping("/course/{id}")
-//	public String showProductListByCategory(@PathVariable("id") Long id,Model model) {
-//		System.out.println(id);
-//		//model.addAttribute("categories", productService.getCategoryList());
-//		model.addAttribute("levellist", levelRepository.getLevelListByCourse(id));
-//		return "course_details";
-//	}
+
 	
 	@GetMapping("/level/{course_id}")
 	public String showProductListByCategory(Model model,@RequestParam("course_id") Long id) {
