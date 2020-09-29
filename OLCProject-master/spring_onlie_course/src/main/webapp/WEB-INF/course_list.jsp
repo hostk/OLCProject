@@ -11,8 +11,7 @@
 </head>
 <body>
 <div class="container">
-<h3>ItemSale List</h3>
-<a href="add_course">New ItemSale</a>
+
 <table class="table table-borderless">
 	<thead>
 		<tr>

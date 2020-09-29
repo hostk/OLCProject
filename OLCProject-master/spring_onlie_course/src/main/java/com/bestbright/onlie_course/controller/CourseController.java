@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+
 
 import com.bestbright.onlie_course.dto.CourseDTO;
 import com.bestbright.onlie_course.model.Level;
 import com.bestbright.onlie_course.repository.CourseRepository;
-import com.bestbright.onlie_course.repository.LevelRepository;
+
 import com.bestbright.onlie_course.service.CourseService;
 import com.bestbright.onlie_course.service.LevelService;
 
@@ -30,8 +30,7 @@ public class CourseController {
 	private CourseService courseService;
 	@Autowired
 	private LevelService levelService;
-	@Autowired
-	private LevelRepository levelRepository;
+	
 	@GetMapping("/create_course")
 	public String createCourse(Model model) {
 		model.addAttribute("course", new CourseDTO());

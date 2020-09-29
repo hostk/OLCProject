@@ -3,6 +3,7 @@ package com.bestbright.onlie_course.service;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.List;
 
 import javax.servlet.ServletContext;
 
@@ -42,8 +43,14 @@ public class Level_materialService implements Level_materialInterface {
 			levelmaterial.setLevel_material_name(levelmaterialdto.getLevel_material_name());
 			levelmaterial.setPhotopath(filename);
 			levelmaterial.setType(levelmaterialdto.getType());
+			levelmaterial.setLevel(levelmaterialdto.getLevel());
 			levelMaterialRepository.save(levelmaterial);
 		}
+	}
+	@Override
+	public List<Level_material> getLevelmaterialByLevel(Long level_id) {
+		// TODO Auto-generated method stub
+		return levelMaterialRepository.getLevelmaterialByLevel(level_id);
 	}
 
 }

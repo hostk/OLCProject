@@ -11,6 +11,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 <form:form action="save_course" method="POST" modelAttribute="course" enctype="multipart/form-data" >
 
 <div class="form-group col-sm-6">

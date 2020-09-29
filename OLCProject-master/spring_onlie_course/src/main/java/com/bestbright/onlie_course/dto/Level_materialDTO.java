@@ -1,10 +1,16 @@
 package com.bestbright.onlie_course.dto;
 
+import java.io.Serializable;
+
 import org.springframework.web.multipart.MultipartFile;
 
 import com.bestbright.onlie_course.model.Level;
 
-public class Level_materialDTO {
+public class Level_materialDTO implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Long Level_material_id;
 	private String Level_material_name;
 	private String type;
@@ -18,12 +24,6 @@ public class Level_materialDTO {
 	}
 	public void setLevel_material_id(Long level_material_id) {
 		Level_material_id = level_material_id;
-	}
-	public String getLevel_material_name() {
-		return Level_material_name;
-	}
-	public void setLevel_material_name(String level_material_name) {
-		Level_material_name = level_material_name;
 	}
 	
 	public String getPhotopath() {
@@ -50,6 +50,12 @@ public class Level_materialDTO {
 	}
 	public void setLevel(Level level) {
 		this.level = level;
+	}
+	public String getLevel_material_name() {
+		return Level_material_name;
+	}
+	public void setLevel_material_name(String level_material_name) {
+		Level_material_name = level_material_name;
 	} 
 	
 }

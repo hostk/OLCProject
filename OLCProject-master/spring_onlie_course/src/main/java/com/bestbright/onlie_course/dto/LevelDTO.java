@@ -11,6 +11,7 @@ public class LevelDTO implements Serializable {
 	private Long level_id;
 	private String level_name;
 
+	public LevelDTO() {}
 	
 	public Long getLevel_id() {
 		return level_id;
