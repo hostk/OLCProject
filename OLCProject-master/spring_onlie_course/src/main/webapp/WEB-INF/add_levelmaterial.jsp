@@ -19,8 +19,8 @@
 	</c:forEach></form:select>
 </div><br>
 <div class="form-group col-sm-6">
-      <label for="Level_material_name">Level_material_name:</label>
-      <form:input path="Level_material_name" class="form-control" placeholder="Enter Level_material_name"/>
+      <label for="Level_material_name">Name:</label>
+      <form:input path="Level_material_name" class="form-control" placeholder="Enter name"/>
       
 </div><br>
 <div class="form-group col-sm-6">

@@ -40,7 +40,7 @@ public class Level_materialService implements Level_materialInterface {
 			}catch(Exception e){
 				throw e;
 			}
-			levelmaterial.setLevel_material_name(levelmaterialdto.getLevel_material_name());
+			levelmaterial.setName(levelmaterialdto.getLevel_material_name());
 			levelmaterial.setPhotopath(filename);
 			levelmaterial.setType(levelmaterialdto.getType());
 			levelmaterial.setLevel(levelmaterialdto.getLevel());

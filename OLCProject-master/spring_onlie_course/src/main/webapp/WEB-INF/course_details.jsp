@@ -18,7 +18,7 @@
 			<tr>
 				
 		
-			<td><a href="/levelM/${level.level_id}">${level.level_name}</a></</td>
+			<td><a href="/levelM/${level.level_id}">${level.level_name}</a></</td><br>
 				   
 			</tr>
 		</c:forEach>

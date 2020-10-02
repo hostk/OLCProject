@@ -22,7 +22,7 @@ public class Level_material implements Serializable {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long Level_material_id;
-	private String Level_material_name;
+	private String name;
 	private String type;
 	private String photopath;
 
@@ -64,16 +64,7 @@ public class Level_material implements Serializable {
 
 
 
-	public String getLevel_material_name() {
-		return Level_material_name;
-	}
-
-
-
-	public void setLevel_material_name(String level_material_name) {
-		Level_material_name = level_material_name;
-	}
-
+	
 
 	public Question getQuestions() {
 		return questions;
@@ -105,6 +96,18 @@ public class Level_material implements Serializable {
 
 	public void setType(String type) {
 		this.type = type;
+	}
+
+
+
+	public String getName() {
+		return name;
+	}
+
+
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 
