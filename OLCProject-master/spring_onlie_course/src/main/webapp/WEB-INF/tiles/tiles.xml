@@ -26,7 +26,10 @@
     </definition>
  
  
-    
+    <definition name="course_details" extends="layout.basic">
+    	<put-attribute name="body" value="/WEB-INF/course_details.jsp" />
+    </definition>
+ 
    
  
 </tiles-definitions>

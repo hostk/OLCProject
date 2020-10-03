@@ -51,6 +51,8 @@ public class LevelmaterialController {
 		List<Level_material> levelMaterial =level_materialservice.getLevelmaterialByLevel(id); 
 		model.addAttribute("levelmaterialList", levelMaterial);
 		model.addAttribute("level_id", id);
-		return "showLevel_Material";
+		return "course_details";
 	}
+	
+	
 }

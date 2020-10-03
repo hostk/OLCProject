@@ -10,18 +10,42 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div class="container">
 
-
-
-		<c:forEach items="${levels}" var="level" varStatus="row">
-			<tr>
-				
+	<div class="container-fluid">
+  <div class="row">
+    <nav class="col-sm-3 col-4" id="myScrollspy">
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+        	<c:forEach items="${levels}" var="level" varStatus="row">
+			
 		
-			<td><a href="/levelM/${level.level_id}">${level.level_name}</a></</td><br>
+		<a class="nav-link active" href="/levelM/${level.level_id}">${level.level_name}</a><br>
 				   
-			</tr>
+			
 		</c:forEach>
-	</div>
+          
+        </li>
+       
+      </ul>
+    </nav>
+   
+  </div>
+   <div class="col-sm-9 col-8">
+      <div id="section1" class="bg-primary">    
+        <c:forEach items="${levelmaterialList }" var="m" varStatus="row">
+			<tr>
+				<td>${row.count}</td>
+				<td>${m.name }</td>
+			<td><input type="radio" name="course" value="Correspondance">${m.type }</td></tr><br>
+				<!-- <video width="220" height="150" controls><source src="/images/${m.photopath }" type="video/mp4"></video></td> 
+			<td><embed src="/images/Beginning Android� Programming with Android Studio ( PDFDrive ).pdf" type="application/pdf"   height="700px" width="500"><td>-->
+		
+		</c:forEach>
+      </div>
+      
+    </div>
+</div>
+
+	
 </body>
 </html>
