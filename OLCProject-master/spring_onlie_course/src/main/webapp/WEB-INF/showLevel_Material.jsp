@@ -27,7 +27,8 @@
 			<tr>
 				<td>${row.count}</td>
 				<td>${m.name }</td>
-			<td><input type="radio" name="course" value="Correspondance">${m.type }</td></tr>
+				
+			<td><a href="/show/${m.type}">${m.type }</a></td></tr>
 				<!-- <video width="220" height="150" controls><source src="/images/${m.photopath }" type="video/mp4"></video></td> 
 			<td><embed src="/images/Beginning Android� Programming with Android Studio ( PDFDrive ).pdf" type="application/pdf"   height="700px" width="500"><td>-->
 		</c:forEach>

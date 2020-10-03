@@ -9,6 +9,7 @@ import javax.servlet.ServletContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
 
 import com.bestbright.onlie_course.dto.Level_materialDTO;
 import com.bestbright.onlie_course.model.Level_material;
@@ -51,6 +52,11 @@ public class Level_materialService implements Level_materialInterface {
 	public List<Level_material> getLevelmaterialByLevel(Long level_id) {
 		// TODO Auto-generated method stub
 		return levelMaterialRepository.getLevelmaterialByLevel(level_id);
+	}
+	@Override
+	public Level_material getLevelMaterialByType(String type) {
+		Level_material lm = levelMaterialRepository.getLevelmaterialByType(type);
+		return lm;
 	}
 
 }
