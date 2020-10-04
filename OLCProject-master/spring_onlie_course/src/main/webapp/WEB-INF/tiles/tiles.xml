@@ -30,6 +30,9 @@
     	<put-attribute name="body" value="/WEB-INF/course_details.jsp" />
     </definition>
  
-   
+    <definition name="showLevel_Material" extends="layout.basic">
+    	<put-attribute name="body" value="/WEB-INF/showLevel_Material.jsp" />
+    </definition>
+ 
  
 </tiles-definitions>

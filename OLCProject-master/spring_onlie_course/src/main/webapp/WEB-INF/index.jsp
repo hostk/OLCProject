@@ -39,8 +39,11 @@
 						</ul>
 					</div>
 					<div class="float-right">
-						<a class="dn_btn" href="tel:+4400123654896">+440 012 3654 896</a>
-						<a class="dn_btn" href="mailto:support@colorlib.com">support@colorlib.com</a>
+						
+						<div class="register-login-area">
+                                <a href="#" class="main_btn">Register</a>
+                                <a href="index-login.html" class="main_btn">Login</a>
+                            </div>
 					</div>
            		</div>	
            	</div>	
@@ -62,8 +65,14 @@
 								<li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
 									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="courses.html">Courses</a>
-										<li class="nav-item"><a class="nav-link" href="course-details.html">Course Details</a></li>
+										<li class="nav-item"><a class="nav-link" href="courses.html"><c:forEach items="${courseList }" var="its" varStatus="row">
+			<tr>
+				
+				<td>${its.course_name}</td>
+				
+			</tr>
+		</c:forEach></a>
+										
 									</ul>
 								</li> 
 								<li class="nav-item submenu dropdown">

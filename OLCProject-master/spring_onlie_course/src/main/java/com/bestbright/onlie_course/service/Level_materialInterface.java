@@ -10,4 +10,6 @@ public interface Level_materialInterface {
 void saveLevelmaterial(Level_materialDTO level_materialdto) throws Exception;
 
 public List<Level_material> getLevelmaterialByLevel(Long level_id);
+
+public Level_material getLevelMaterialByType(String type);
 }

@@ -52,5 +52,10 @@ public class Level_materialService implements Level_materialInterface {
 		// TODO Auto-generated method stub
 		return levelMaterialRepository.getLevelmaterialByLevel(level_id);
 	}
-
+	@Override
+	public Level_material getLevelMaterialByType(String type) {
+		Level_material lm = levelMaterialRepository.getLevelmaterialByType(type);
+		return lm;
+	}
+	
 }

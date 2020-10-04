@@ -51,8 +51,21 @@ public class LevelmaterialController {
 		List<Level_material> levelMaterial =level_materialservice.getLevelmaterialByLevel(id); 
 		model.addAttribute("levelmaterialList", levelMaterial);
 		model.addAttribute("level_id", id);
-		return "course_details";
+		return "showLevel_Material";
 	}
-	
+	@RequestMapping("/show/{type}")
+	public String showLMByType(Model model, @PathVariable("type") String type) {
+		if(type.equals("video")) {
+		model.addAttribute("levelmaterial", level_materialservice.getLevelMaterialByType(type));
+		model.addAttribute("level_id", type);
+		return "video";
+		}else if(type.equals("pdf")) {
+		model.addAttribute("levelmaterial", level_materialservice.getLevelMaterialByType(type));
+		model.addAttribute("level_id", type);
+		return "pdf";
+		}else {
+			return "/";
+		}
+		}
 	
 }

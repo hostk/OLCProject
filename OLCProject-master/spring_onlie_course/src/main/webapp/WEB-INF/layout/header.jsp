@@ -1,15 +1,16 @@
-  
- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ include file="/WEB-INF/common/include.jsp"%>
 
 <%@ page isELIgnored="false" %>
 
-
- 
+    
+        
+        <!--================Header Menu Area =================-->
+          <div class="header-section">
+       <header class="header_area">
    
-        <header class="header-section">
-            	<div class="top_menu row m0">
+           	<div class="top_menu row m0">
            		<div class="container">
 					<div class="float-left">
 						<ul class="list header_social">
@@ -20,8 +21,11 @@
 						</ul>
 					</div>
 					<div class="float-right">
-						<a class="dn_btn" href="tel:+4400123654896">+440 012 3654 896</a>
-						<a class="dn_btn" href="mailto:support@colorlib.com">support@colorlib.com</a>
+						
+						<div class="register-login-area">
+                                <a href="#" class="main_btn">Register</a>
+                                <a href="index-login.html" class="main_btn">Login</a>
+                            </div>
 					</div>
            		</div>	
            	</div>	
@@ -66,7 +70,10 @@
 					</div>
             	</nav>
             </div>
-        </header><br>
-         
+           
+        </header>
+        </div><br><br><br><br><br><br>
         <!--================Header Menu Area =================-->
- 
+       
+        
+   

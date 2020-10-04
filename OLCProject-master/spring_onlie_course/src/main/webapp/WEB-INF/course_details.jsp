@@ -30,20 +30,7 @@
     </nav>
    
   </div>
-   <div class="col-sm-9 col-8">
-      <div id="section1" class="bg-primary">    
-        <c:forEach items="${levelmaterialList }" var="m" varStatus="row">
-			<tr>
-				<td>${row.count}</td>
-				<td>${m.name }</td>
-			<td><input type="radio" name="course" value="Correspondance">${m.type }</td></tr><br>
-				<!-- <video width="220" height="150" controls><source src="/images/${m.photopath }" type="video/mp4"></video></td> 
-			<td><embed src="/images/Beginning Android� Programming with Android Studio ( PDFDrive ).pdf" type="application/pdf"   height="700px" width="500"><td>-->
-		
-		</c:forEach>
-      </div>
-      
-    </div>
+   
 </div>
 
 	
