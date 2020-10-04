@@ -58,9 +58,5 @@ public class Level_materialService implements Level_materialInterface {
 		Level_material lm = levelMaterialRepository.getLevelmaterialByType(type);
 		return lm;
 	}
-<<<<<<< HEAD
-	
-=======
 
->>>>>>> 322525d2f4c9b6ac27de5fe825cdbbb1d8fc7ee6
 }
