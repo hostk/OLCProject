@@ -53,12 +53,20 @@ public class LevelmaterialController {
 		model.addAttribute("level_id", id);
 		return "showLevel_Material";
 	}
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 322525d2f4c9b6ac27de5fe825cdbbb1d8fc7ee6
 	@RequestMapping("/show/{type}")
 	public String showLMByType(Model model, @PathVariable("type") String type) {
 		if(type.equals("video")) {
 		model.addAttribute("levelmaterial", level_materialservice.getLevelMaterialByType(type));
 		model.addAttribute("level_id", type);
+<<<<<<< HEAD
 		return "video";
+=======
+		return "vedio";
+>>>>>>> 322525d2f4c9b6ac27de5fe825cdbbb1d8fc7ee6
 		}else if(type.equals("pdf")) {
 		model.addAttribute("levelmaterial", level_materialservice.getLevelMaterialByType(type));
 		model.addAttribute("level_id", type);
@@ -66,6 +74,11 @@ public class LevelmaterialController {
 		}else {
 			return "/";
 		}
+<<<<<<< HEAD
 		}
+=======
+		
+}
+>>>>>>> 322525d2f4c9b6ac27de5fe825cdbbb1d8fc7ee6
 	
 }
