@@ -17,8 +17,6 @@
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
         	<c:forEach items="${levels}" var="level" varStatus="row">
-			
-		
 		<a class="nav-link active" href="/levelM/${level.level_id}">${level.level_name}</a><br>
 				   
 			

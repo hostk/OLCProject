@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<embed src="/images/${levelmaterial.photopath}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
+<embed src="/images/${levelmaterial.pdfPath}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
 
 </body>
 </html>

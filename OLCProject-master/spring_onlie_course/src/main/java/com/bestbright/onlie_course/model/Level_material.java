@@ -24,8 +24,8 @@ public class Level_material implements Serializable {
 	private Long Level_material_id;
 	private String name;
 	private String type;
-	private String photopath;
-
+	private String vedioPath;
+	private String pdfPath;
 	
 	@ManyToOne
 	@JoinColumn(name="level_id")
@@ -76,14 +76,35 @@ public class Level_material implements Serializable {
 		this.questions = questions;
 	}
 
-	public String getPhotopath() {
-		return photopath;
+	
+
+
+	public String getVedioPath() {
+		return vedioPath;
 	}
 
 
 
-	public void setPhotopath(String photopath) {
-		this.photopath = photopath;
+	public void setVedioPath(String vedioPath) {
+		this.vedioPath = vedioPath;
+	}
+
+
+
+	public String getPdfPath() {
+		return pdfPath;
+	}
+
+
+
+	public void setPdfPath(String pdfPath) {
+		this.pdfPath = pdfPath;
+	}
+
+
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
 	}
 
 

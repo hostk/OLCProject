@@ -10,8 +10,8 @@
 </head>
 <body>
 <video width="320" height="240" controls>
-  <source src="/images/${levelmaterial.photopath }" type="video/mp4">
-  <source src="/images/${levelmaterial.photopath }" type="video/ogg">
+  <source src="/images/${levelmaterial.vedioPath }" type="video/mp4">
+  <source src="/images/${levelmaterial.vedioPath}" type="video/ogg">
   Your browser does not support the video tag.
 </video>
 </body>
