@@ -24,7 +24,7 @@ public class LevelController {
 	public String createLevel(Model model) {
 		model.addAttribute("level", new Level());
 		model.addAttribute("courseList",courseRepository.findAll());
-		return "add_level";
+		return "create_level";
 	}
 	@PostMapping("/save_level")
 	public String saveLevel(@ModelAttribute("level")Level level,Model model) {
@@ -33,7 +33,12 @@ public class LevelController {
 		
 		model.addAttribute("levelList",levelRepository.findAll());
 		
-		return "level_list";
+		return "redirect:/level_list";
 	}
 	
+	@GetMapping("/level_list")
+	public String showlevel(Model model) {
+		model.addAttribute("levelList",levelRepository.findAll());
+		return "level_list";
+	}
 }

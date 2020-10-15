@@ -14,7 +14,9 @@ public interface LevelMaterialRepository extends JpaRepository<Level_material,Lo
 	@Query("SELECT lM from Level_material lM LEFT JOIN Level l on lM.level.level_id=l.level_id where lM.level.level_id=:levelId")
 	public List<Level_material> getLevelmaterialByLevel(@Param("levelId")Long id);
 	
-
-	@Query("SELECT lM from Level_material lM where lM.type=:type")
-	public Level_material getLevelmaterialByType(@Param("type")String type);
+	@Query("SELECT lM from Level_material lM where lM.vedioPath=:type")
+	public Level_material getLevelmaterialVedio(@Param("type")String type);
+	
+	@Query("SELECT lM from Level_material lM where lM.pdfPath=:type")
+	public Level_material getLevelmaterialPdf(@Param("type")String type);
 }

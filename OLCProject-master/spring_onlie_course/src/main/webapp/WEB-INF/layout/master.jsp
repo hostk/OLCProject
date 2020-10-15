@@ -2,6 +2,7 @@
 <%@ include file="/WEB-INF/common/include.jsp"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	<%@ include file="/WEB-INF/bootstrap.jsp"%>
 
 <!DOCTYPE html>   
 <html>
@@ -35,9 +36,9 @@
     </head>
     <body>
     	<div>
-    	<tiles:insertAttribute name="header" />
-        <tiles:insertAttribute name="body" />
-        <tiles:insertAttribute name="footer" />
+    	<tiles:insertAttribute name="header"/>
+        <tiles:insertAttribute name="body"/>
+        <tiles:insertAttribute name="footer"/>
     	</div>
     </body>
 </html>

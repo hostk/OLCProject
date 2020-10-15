@@ -8,4 +8,5 @@ public interface CourseInterface {
 
 	
 	public Course getcourseById(Long id);
+	void delete(Long id);
 }

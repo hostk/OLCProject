@@ -52,6 +52,15 @@ public class Question implements Serializable {
 		this.question_name = question_name;
 	}
 
+	
+	public Set<Answer> getAnswers() {
+		return answers;
+	}
+
+	public void setAnswers(Set<Answer> answers) {
+		this.answers = answers;
+	}
+
 	public Level_material getLevel_material() {
 		return level_material;
 	}

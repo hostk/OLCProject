@@ -52,6 +52,11 @@ public class CourseService implements CourseInterface {
 		// TODO Auto-generated method stub
 		return courseRepository.findById(id).get();
 	}
+	@Override
+	public void delete(Long id) {
+		// TODO Auto-generated method stub
+		courseRepository.deleteById(id);
+	}
 	
 	
 }

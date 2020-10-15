@@ -21,11 +21,11 @@ public class Level_material implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private Long Level_material_id;
+	private Long level_material_id;
 	private String name;
 	private String type;
-	private String photopath;
-
+	private String vedioPath;
+	private String pdfPath;
 	
 	@ManyToOne
 	@JoinColumn(name="level_id")
@@ -52,19 +52,21 @@ public class Level_material implements Serializable {
 
 
 
+	
+
+	
+
 	public Long getLevel_material_id() {
-		return Level_material_id;
+		return level_material_id;
 	}
 
 
 
 	public void setLevel_material_id(Long level_material_id) {
-		Level_material_id = level_material_id;
+		this.level_material_id = level_material_id;
 	}
 
 
-
-	
 
 	public Question getQuestions() {
 		return questions;
@@ -76,17 +78,34 @@ public class Level_material implements Serializable {
 		this.questions = questions;
 	}
 
-	public String getPhotopath() {
-		return photopath;
+	
+
+
+	public String getVedioPath() {
+		return vedioPath;
 	}
 
 
 
-	public void setPhotopath(String photopath) {
-		this.photopath = photopath;
+	public void setVedioPath(String vedioPath) {
+		this.vedioPath = vedioPath;
 	}
 
 
+
+	public String getPdfPath() {
+		return pdfPath;
+	}
+
+
+
+	public void setPdfPath(String pdfPath) {
+		this.pdfPath = pdfPath;
+	}
+
+
+
+	
 
 	public String getType() {
 		return type;
@@ -108,6 +127,12 @@ public class Level_material implements Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
 	}
 
 

@@ -9,11 +9,13 @@
 <title>Insert title here</title>
 </head>
 <body>
+<body>
 <video width="320" height="240" controls>
-  <source src="/images/${levelmaterial.photopath }" type="video/mp4">
-  <source src="/images/${levelmaterial.photopath }" type="video/ogg">
- 
+  <source src="/images/${levelmaterial.vedioPath }" type="video/mp4">
+  <source src="/images/${levelmaterial.vedioPath}" type="video/ogg">
+  
 </video>
+</body>
 </body>
 
 </html> 
