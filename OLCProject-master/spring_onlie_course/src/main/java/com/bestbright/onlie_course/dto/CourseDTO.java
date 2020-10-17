@@ -2,6 +2,8 @@ package com.bestbright.onlie_course.dto;
 
 import java.io.Serializable;
 
+import org.springframework.web.multipart.MultipartFile;
+
 
 public class CourseDTO implements Serializable{
 
@@ -14,6 +16,9 @@ public class CourseDTO implements Serializable{
 	private Long course_id;
 	private String course_name;
 	private String course_description;
+	private String photopath;
+	private MultipartFile file;
+	
 	
 	public Long getCourse_id() {
 		return course_id;
@@ -32,6 +37,18 @@ public class CourseDTO implements Serializable{
 	}
 	public void setCourse_description(String course_description) {
 		this.course_description = course_description;
+	}
+	public String getPhotopath() {
+		return photopath;
+	}
+	public void setPhotopath(String photopath) {
+		this.photopath = photopath;
+	}
+	public MultipartFile getFile() {
+		return file;
+	}
+	public void setFile(MultipartFile file) {
+		this.file = file;
 	}
 	
 	

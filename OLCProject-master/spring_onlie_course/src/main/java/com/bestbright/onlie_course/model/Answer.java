@@ -29,17 +29,11 @@ public class Answer implements Serializable{
 	@JoinColumn(name="question_id")
 	private Question question;
 	
-	
-	
-	
 	@OneToOne
 	private StudentResult studentResults;
 	
-	
-	
-	
-	
 	public Answer () {}
+	
 	public Long getAnswer_id() {
 		return answer_id;
 	}
@@ -58,17 +52,26 @@ public class Answer implements Serializable{
 	public void setStatus(boolean status) {
 		this.status = status;
 	}
-	public Question getQuestion() {
-		return question;
-	}
-	public void setQuestion(Question question) {
-		this.question = question;
-	}
+	
 	public StudentResult getStudentResults() {
 		return studentResults;
 	}
 	public void setStudentResults(StudentResult studentResults) {
 		this.studentResults = studentResults;
+	}
+
+	
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+	public Question getQuestion() {
+		return question;
+	}
+
+	public void setQuestion(Question question) {
+		this.question = question;
 	}
 	
 	

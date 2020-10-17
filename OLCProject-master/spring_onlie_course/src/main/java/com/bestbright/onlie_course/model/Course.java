@@ -3,7 +3,6 @@ package com.bestbright.onlie_course.model;
 import java.io.Serializable;
 import java.util.Set;
 
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,7 +20,7 @@ public class Course implements Serializable {
 	private Long course_id;
 	private String course_name;
 	private String course_description;
-	
+	private String photopath;
 	
 	@OneToMany(mappedBy = "course")
 	private Set<Level> levelList;
@@ -61,6 +60,14 @@ public class Course implements Serializable {
 		this.course_description = course_description;
 	
 
+	}
+
+	public String getPhotopath() {
+		return photopath;
+	}
+
+	public void setPhotopath(String photopath) {
+		this.photopath = photopath;
 	}
 
 }
